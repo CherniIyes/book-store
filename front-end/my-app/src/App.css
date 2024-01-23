@@ -1,0 +1,433 @@
+/* App.css */
+.product-details {
+  /* display: flex; */
+  flex-direction: column;
+  /* Ensure a column layout */
+  width: 200px;
+  /* Set the width of each card */
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.product-details:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-image img {
+  width: 100%;
+  /* Make the image fill the container */
+  height: auto;
+  /* Maintain aspect ratio */
+  border-radius: 5px;
+}
+
+.product-info {
+  margin-top: 10px;
+}
+
+.product-buttons {
+  margin-top: 10px;
+}
+
+/* App.css */
+.product-container {
+  display: flex;
+  /* Use "grid" for grid layout */
+  flex-wrap: wrap;
+  /* Add this if you want cards to wrap to the next line when there's not enough space */
+  justify-content: space-between;
+  /* Adjust as needed */
+}
+
+
+.nav {
+  background-color: #1d1f23;
+  margin: 0px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #F3F3F3;
+}
+
+
+
+.logoo {
+  width: 110px;
+  margin-right: 850px;
+  height: 29px
+}
+
+.logoo:hover {
+  cursor: pointer;
+}
+
+
+.items {
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  margin-right: 50px;
+  font-size: 15px;
+  padding: 0px;
+  display: flex;
+  width: 100px;
+}
+
+.items:hover {
+  color: rgb(255, 255, 255);
+  margin-right: 50px;
+  background-color: #000000;
+  cursor: pointer;
+  width: 100px;
+}
+
+
+.search {
+  height: 28px;
+  width: 282px;
+  border-radius: 2px;
+  border: transparent;
+  text-align: left;
+  font-size: 14px;
+  margin-right: 1px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  position: relative;
+  right: 193px;
+  bottom: -11px;
+}
+
+.searchForm {
+  margin-right: 20%;
+}
+
+.searchButton {
+  height: 30px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  width: 50px;
+  border: transparent;
+  background-color: black;
+  font-size: 14px;
+  position: relative;
+  bottom: -1px;
+  position: relative;
+  right: -92px;
+  bottom: 19px;
+}
+
+.searchButton:hover {
+  /* height: 42px;
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
+  width: 47px; */
+  cursor: pointer;
+}
+
+/* App.css */
+
+.quotee {
+  position: relative;
+  bottom: -62px;
+  left: 48%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.quoter {
+  font-style: italic;
+  font-size: 14px;
+  color: #ffffff;
+  position: relative;
+  top: -15px;
+  right: -110px;
+}
+
+
+
+
+
+
+/* oneProduct--------------------------------------------- */
+
+/* App.css or create a new CSS file and import it in your component */
+.one-product-details {
+  display: flex;
+  /* border: 1px solid #ddd; */
+  /* border-radius: 8px; */
+  overflow: hidden;
+  /* margin-bottom: 20px; */
+  position: relative;
+  top: 70px;
+  width: 1500px;
+  left: 100px;
+}
+
+.one-product-image {
+  flex: 1;
+  overflow: hidden;
+}
+
+.one-product-image img {
+  width: 65%;
+  height: auto;
+  border-radius: 9px 0 0 8px;
+}
+
+.one-product-info {
+  flex: 2;
+  padding: 16px;
+}
+
+
+.one-product-info p {
+  margin-bottom: 16px;
+  color: #555;
+}
+
+.one-product-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.one-add-to-cart-btn {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+  right: 5px;
+}
+
+.one-add-to-cart-btn:hover {
+  background-color: #31af65;
+}
+
+
+.one-delete-btn {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+  right: 2.4px;
+}
+
+.one-add-to-cart-btn:hover {
+  background-color: #31af65;
+}
+
+.one-delete-btn:hover {
+  background-color: #31af65;
+}
+
+
+
+
+
+
+
+
+/* cart------------------------------------------ */
+
+
+/* Cart.css */
+.cart-container {
+  margin: 20px;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 698px;
+  height: 112px;
+  position: relative;
+  left: 485px;
+  top: 9px;
+}
+
+.cart-item-image {
+  width: 81px;
+  height: 105px;
+  margin-right: 10px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+.pay-btn {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.pay-btn:hover {
+  background-color: #27ae60;
+}
+
+.cart-summary {
+  position: relative;
+  left: 493px;
+}
+
+
+
+/* update---------------------------------------------------- */
+/* Add this CSS for the update popup */
+.update-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.update-popup h2 {
+  margin-bottom: 20px;
+}
+
+.update-popup label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.update-popup input {
+  width: 96%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.update-popup textarea {
+  width: 96%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.update-popup button {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.update-popup button:hover {
+  background-color: #31af65;
+}
+
+/* Add this CSS to darken the background when the popup is open */
+.one-product-details {
+  position: relative;
+}
+
+.one-product-details::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 998;
+  display: none;
+}
+
+.show-popup .one-product-details::after {
+  display: block;
+}
+
+.one-update-btn {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.one-update-btn:hover {
+  background-color: #31af65;
+}
+
+.cancle {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+  left: 3px;
+}
+
+.cancle:hover {
+  background-color: #31af65;
+}
+
+/* add-------------------------------------- */
+
+/* Add.css */
+
+.add-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.add-input {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 400px;
+}
+
+.add-button {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #31af65;
+}
